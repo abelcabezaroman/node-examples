@@ -32,6 +32,28 @@ router.post('/', async (req, res, next) => {
     }
 });
 
+router.delete('/:id', async (req, res, next) => {
+    try {
+        const {id} = req.params;
+        // No será necesaria asignar el resultado a una variable ya que vamos a eliminarlo
+        await Character.findByIdAndDelete(id);
+        return res.status(200).json('Character deleted!');
+    } catch (error) {
+        return next(error);
+    }
+});
+
+router.delete('/:id', async (req, res, next) => {
+    try {
+        const {id} = req.params;
+        // No será necesaria asignar el resultado a una variable ya que vamos a eliminarlo
+        await Character.findByIdAndDelete(id);
+        return res.status(200).json('Character deleted!');
+    } catch (error) {
+        return next(error);
+    }
+});
+
 module.exports = router;
 
 
