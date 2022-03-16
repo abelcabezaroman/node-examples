@@ -40,8 +40,10 @@ const characters = [
 
 const characterDocuments = characters.map(character => new Character(character));
 
+// .connect('mongodb://localhost:27017/casa-de-papel', {
+
 mongoose
-    .connect('mongodb://localhost:27017/casa-de-papel', {
+    .connect('mongodb+srv://root:root@cluster0.rd8he.mongodb.net/casa-de-papel', {
         useNewUrlParser: true,
         useUnifiedTopology: true,
     })

@@ -26,7 +26,6 @@ router.get('/movies/:movie', (req, res) => {
     res.send(movies[findMovieIndex]);//Envío la respuesta encontrada.
 })
 
-
 server.use('/', router);
 
 server.listen(PORT, () => {

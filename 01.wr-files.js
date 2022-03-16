@@ -1,6 +1,6 @@
 // //Requerimos el paquete
 // const fs = require('fs');
-//
+
 // // Creamos un array de objetos que representan personas
 // const avengers = [
 //     {
@@ -16,15 +16,17 @@
 //         power: 110
 //     }
 // ];
-//
+
 // // Transformamos el array a un JSON en formato String
 // const avengersJson = JSON.stringify(avengers);
-//
+
 // // Creamos el archivo people.json y dejamos que el callback
 // // nos avise cuando se complete la escritura.
 // fs.writeFile('avengers.json', avengersJson, () => {
 //     console.log('avengers.json created!');
 // })
+
+
 const fs = require('fs');
 
 // Leemos un archivo en la dirección dada y el callback es invocado

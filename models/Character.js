@@ -1,14 +1,12 @@
 // Archivo Character.js dentro de la carpeta models
 const mongoose = require('mongoose');
 
-const Schema = mongoose.Schema;
-
 // Creamos el esquema de personajes
-const characterSchema = new Schema(
+const characterSchema = new mongoose.Schema(
     {
         name: { type: String, required: true },//La propiedad required hace que el campo sea obligatorio
         age: { type: Number },
-        alias: { type: String, required: true },
+        alias: { type: String, required: true }
     },
     {
         // Esta propiedad servirá para guardar las fechas de creación y actualización de los documentos

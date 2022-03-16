@@ -2,7 +2,7 @@ const http = require('http');
 
 const requestHandler = (req, res) => {
     // Indicamos que vamos a responder con un contenido de tipo json
-    res.setHeader("Content-Type", "text/json");
+    res.setHeader("Content-Type","text/json" );
     // Indicamos que la respuesta será el status 200 (éxito)
     res.writeHead(200);
     // Enviamos la respuesta a nuestros usuarios

@@ -1,5 +1,5 @@
 const express = require('express');
-require('./utils/db')
+require('./utils/db');
 
 
 const PORT = 3000;
@@ -12,7 +12,7 @@ const router = express.Router();
 router.get('/characters', async (req, res) => {
     try {
         const characters = await Character.find();
-        return res.status(200).json(characters)
+        return res.status(200).json(characters);
     } catch (err) {
         return res.status(500).json(err);
     }

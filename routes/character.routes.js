@@ -14,9 +14,7 @@ router.get('/', async (req, res, next) => {
     }
 });
 
-router.post('/', async (req, res, next) => {        console.log('##ABEL## >>  >>  ', req.body);
-
-
+router.post('/', async (req, res, next) => {
     try {
         // Crearemos una instancia de character con los datos enviados
         const newCharacter = new Character({
